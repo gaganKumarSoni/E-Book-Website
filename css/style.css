@@ -1,0 +1,469 @@
+
+/* Animated MEnu Icon */
+.bar1, .bar2, .bar3 {
+  width: 28px;
+  height: 3px;
+  background-color: #333;
+  color: white;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-3px, -5px);
+}
+
+.active{
+     background-color: skyblue !important;
+}
+
+.btn:hover{
+    background-color: white !important;
+    color: #3e3e3e !important;
+    border: 1px solid #fff !important;
+}
+li > a:hover{
+    background-color: green !important;
+    color: black !important;
+}
+a > img{
+    margin-top: -30px !important;
+    margin-left: auto !important;
+}
+.navbar{
+    background-color: #222220 !important;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: -2px;
+    border-bottom: 2px solid #222220;
+}
+
+.navbar-header a:hover{
+    border-bottom: none !important;
+    color: white !important;
+}
+.navbar a:hover {
+    border-bottom: solid 2px red;
+    transform: scale(1.0) !important;
+    
+}
+@media(max-width: 768px){
+    .navbar a:hover{
+        border-bottom: none;
+        transform: none !important;
+    }
+    .navbar{
+        text-transform: none;
+        position: relative;
+    }
+}
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: white !important;
+    font-size: 12px;
+    padding: 14px;
+    text-align: center;
+}
+b{
+    font-weight: 400;
+}
+#login-dp .social-buttons{
+    margin: 12px 0;
+}
+#login-dp .social-buttons{
+    width: 49%;
+}
+.social-buttons i{
+    margin-right: 5px;
+}
+#login-dp .form-group{
+    margin-bottom: 10px;
+}
+#signup-btn{
+    background-color: #d34747;
+    border: 0;
+    border-radius: 2px;
+    height: 2.5em;
+}
+#signup-btn:hover{
+    background-color: skyblue!important;
+}
+@media(max-width: 768px){
+    #login-dp{
+        background-color: inherit;
+        color: black;
+    }
+}
+/* Header Section*/
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url("download.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    animation: chimg 15s infinite linear;
+}
+@keyframes chimg{
+    35%{background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url("elibrary.jpg");}
+    70%{background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url("elibrary.jpeg");}
+}
+
+.header h1{
+    color: #fff;
+    font-size: 70px;
+    margin-top: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header h3{
+    color: #fff;
+    
+}
+.header span{
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+}
+@media(max-width: 768px){
+    .navbar-collapse{
+        height: auto !important;
+    }
+    .header h1{
+        font-size: 50px;
+        margin-top: 190px;
+    }
+    .header h3{
+        font-size: 15px;
+    }
+}
+
+.flex-container{
+    display: flex !important;
+    border: 1px solid transparent !important;
+    height: 100px;
+    justify-content: center;
+}
+
+.btn-grp{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+.flex1{
+    margin-right: 5px;
+    border-radius: 5%;
+}
+.flex2{
+    margin-left: 5px;
+    border-radius: 5%;
+}
+
+/* Services  */
+.services{
+    padding: 70px 40px 20px 50px;
+    text-align: center;
+}
+.services img:not(:second-child) img:not(:last-child){
+    height: 190px;
+    width: 300px;
+}
+.services img:hover{
+    transform: scale(1.4);
+}
+
+.services .row{
+    width: 1130px;
+}
+.services h1, .services h4{
+    color: #4c4c4c;
+    padding: 20px 10px 10px 20px;
+}
+.services h4{
+    border-top: 2px dashed black;
+    margin-top: 10px;
+}
+.services p{
+    font-size: 14px;
+    padding-bottom: 40px;
+    color: #737373;
+    margin-top: 10px;
+}
+#col{
+    background-color: white !important;
+}
+.services .cse{
+    background-color: darkcyan !important;
+}
+@media(max-width: 768px){
+    .services img:hover{
+        transform: none;
+    }
+    .services .row{
+        width: auto;
+    }
+    .services img:hover{
+        transform: none;
+    }
+    #services{
+        padding: 50px 10px 10px 10px;
+        background-color: floralwhite;
+    }
+}
+/* Terms to use */
+
+.terms{
+    padding: 50px 60px 40px 10px;
+    min-height: 600px;
+    margin-top: 40px;
+    color: #fff;
+    background-color: #222220;
+}
+.terms h2{
+    padding-bottom: 80px;
+}
+.terms #left img{
+    display: inline-block;
+    margin-left: 110px; 
+}
+.terms #right{
+    margin-left: auto;
+    margin-bottom: 50px;
+    width: auto;
+}
+.terms #right h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.terms #right li{
+    font-family: 'Monda', sans-serif;
+    padding-top: 15px ;
+}
+
+@media(max-width: 768px){
+    .terms{
+        padding: 40px 10px 10px 20px;
+        min-height: 500px;
+        margin-top: -10px;
+    }
+    .terms #right li{
+        padding-top: 4px;
+    }
+    .terms #right{
+        margin-bottom: 10px;
+    }
+    .terms #left img{
+        margin-left: 20px;
+        justify-content: center;
+    }
+}
+
+/* Google play book */
+.gpbook{
+    padding: 60px 50px 50px 50px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.gpbook .packages{
+    padding: 30px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    height: 565px;
+}
+.gpbook .packages h4{
+    padding: 15px 5px;
+    border-top: 2px dotted #aaa;
+}
+.gpbook small{
+    display: block;
+}
+.gpbook .packages img{
+    width: 260px;
+    height: 374px;
+}
+.gpbook .packages h4{
+    height: 80px;
+}
+.gpbook .set{
+    margin-top: 30px;
+    background-color: skyblue;
+    margin-right: 380px;
+}
+.gpbook #flex4 ,#flex5 , flex6{
+    padding-top: 30px;
+    margin-top: 80px;
+}
+@media(max-width: 768px){
+    .gpbook{
+        padding: 95px 5px;
+        margin-top: 10px;
+    }
+    .gpbook .packages{
+        padding: 10px;
+        height: auto;
+    }
+    .gpbook .packages h4{
+        height: auto;
+    }
+    .gpbook .set{
+        margin-right: 20px;
+        margin-top: 19px;
+    }
+}
+
+/* Developer Section */
+
+
+.developer .container h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+	
+}
+
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+
+
+/* Contacts */
+.contact{
+    padding: 50px 0px 80px;
+    background-color: #bf5353;
+    text-align: center;
+}
+.contact p{
+    padding-bottom: 70px;
+    color: #fff;
+    margin: 20px 0px 20px;
+}
+.contact .input-group{
+    margin-bottom: 25px;
+}
+.contact .form-control{
+    border-radius: 0 !important;
+}
+.contact span{
+    border-radius: 0 !important;
+}
+.contact .btn{
+    margin-top: -12px;
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #f08080;
+}
+.contact .btn:hover{
+    background-color: #a85959 !important;
+    color: #fff !important;
+}
+
+/* Footer */
+.footerf{
+    padding: 30px;
+    color: #cccccc;
+    background-color: #222222;
+}
+#mech .well img{
+    width: 90px;
+    height: 130px;
+}
+#mech .well{
+    width: 290px;
+    height: 370px;
+}
+
+@media(max-width: 768px){
+    .footerf h4{
+        margin-top: 35px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
